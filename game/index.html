@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Warung Kilat — game masak cepat</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #241a12;
+    min-height: 100%;
+    font-family: system-ui, "DejaVu Sans", sans-serif;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  canvas {
+    width: min(96vw, 960px);
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+    background: #f3dfae;
+  }
+  p {
+    color: #b09a72;
+    font-size: 13px;
+    margin: 10px 0 0;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="960" height="600"></canvas>
+<p>Warung Kilat — klik bahan di counter atau tekan 1–6, rakit hidangan, sajikan sebelum pelanggan pergi.</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
